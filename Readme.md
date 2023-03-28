@@ -1,3 +1,8 @@
+<html>
+<head>
+  <link rel="stylesheet" href="./readme.css">
+</head>
+<body>
 <h1> Super projeto Rails React </h1>
 
 <h2>Como utilizar este projeto </h2>
@@ -15,7 +20,7 @@
 
 ## Passo a passo do backend
 
-### Entrar na pasta do backend <bold>(CMD)</bold>
+### Entrar na pasta do backend <p id="colorido">(CMD)</p>
 
 ```cd backend ```
 
@@ -38,3 +43,6 @@
 ### Subir o servidor
 
 ```rails s -p 8080```
+
+</body>
+</html>
