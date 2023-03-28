@@ -20,8 +20,7 @@
 
 ## Passo a passo do backend
 
-### Entrar na pasta do backend
- <div id="colorido">(CMD)</div>
+### Entrar na pasta do backend (CMD)
 
 ```cd backend ```
 
