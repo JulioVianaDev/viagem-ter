@@ -42,7 +42,7 @@
 
 ### Subir o servidor
 
-```rails s -p 8080```
+```rails s -p 3001```
 
 </body>
 </html>
