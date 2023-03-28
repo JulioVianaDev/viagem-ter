@@ -5,6 +5,7 @@
 # BACKEND
 
 ## Condições para funcionar
+
 <ul>
   <li>Ter o ruby 3.1.3 instalado </li>
   <li>Ter o bundler instalado(cmd=> gem install bundler) </li>
@@ -13,6 +14,10 @@
 </ul>
 
 ## Passo a passo do backend
+
+### Entrar na pasta do backend <bold>(CMD)</bold>
+
+```cd backend ```
 
 ### Instalar as gems
 
