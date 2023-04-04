@@ -1,3 +1,5 @@
+import Ex1 from "./exemplos/function";
+
 function App(){
 
   const data = 	{
@@ -9,10 +11,12 @@ function App(){
 		"created_at": "2023-03-28T21:55:13.114Z",
 		"updated_at": "2023-03-28T21:55:13.114Z"
 	}
-  
+
   return(
     <>
       <h1>Opa</h1>
+
+      <Ex1/>
     </>
   )
 }
