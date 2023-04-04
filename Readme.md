@@ -1,8 +1,4 @@
-<html>
-<head>
-  <link rel="stylesheet" href="./readme.css">
-</head>
-<body>
+
 <h1> Super projeto Rails React </h1>
 
 <h2>Como utilizar este projeto </h2>
@@ -44,5 +40,23 @@
 
 ```rails s -p 3001```
 
-</body>
-</html>
+# FRONTEND
+
+## Passo a Passo para instalar o front
+
+### Entrar na pasta em outro cmd
+
+```cd frontend```
+
+### Instalar as dependencias
+
+```npm install```
+
+### Iniciar o front
+
+```npm start```
+
+
+
+
+
