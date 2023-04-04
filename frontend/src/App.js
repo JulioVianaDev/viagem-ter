@@ -1,4 +1,5 @@
 import EX2 from "./exemplos/ArrowFunction";
+import Botao from "./exemplos/Botao";
 import Ex1 from "./exemplos/function";
 import PropsAbistrado from "./exemplos/props/PropsAbistrado";
 import Props from './exemplos/props/props'
@@ -31,6 +32,11 @@ function App(){
       <h1>Opa {valorInicial}</h1>
       <button onClick={MudarValor}> Clique aqui para mudar o valor</button>
       <br></br>
+      <Botao
+        cor='red'
+        tarefa={()=>console.log("cliquei")}
+        texto="clique para exibir no console"
+      />
       {hide && "texto hide true" }<br/>
       {!hide && "texto hide não true" }<br/>
       {hide ?"se o hide estiver true" : "se o hide não estiver true" }<br/>
