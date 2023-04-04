@@ -1,6 +1,6 @@
 import EX2 from "./exemplos/ArrowFunction";
 import Ex1 from "./exemplos/function";
-
+import Props from './exemplos/props/props'
 function App(){
 
   const data = 	{
@@ -18,6 +18,8 @@ function App(){
       <h1>Opa</h1>
       <Ex1/>
       <EX2/>
+      <Props numero="14" nome="julio" idade='21' />
+      <Props numero="20" nome="antonio" idade='80' />
     </>
   )
 }
