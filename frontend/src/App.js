@@ -6,6 +6,7 @@ import {useState,useEffect} from 'react';
 
 function App(){
   const [valorInicial,FunctionParaMudarOValor] = useState("primeiro valor")
+  const [hide,setHide] = useState(false);
 
   function MudarValor(){
     FunctionParaMudarOValor("mudei");
@@ -14,7 +15,7 @@ function App(){
   useEffect(()=>{
     console.log("funcionei");
   },[valorInicial])
-  
+
   const data = 	{
 		"id": 1,
 		"nome": "Denver International Airport",
@@ -30,6 +31,11 @@ function App(){
       <h1>Opa {valorInicial}</h1>
       <button onClick={MudarValor}> Clique aqui para mudar o valor</button>
       <br></br>
+      {hide && "texto hide true" }<br/>
+      {!hide && "texto hide não true" }<br/>
+      {hide ?"se o hide estiver true" : "se o hide não estiver true" }<br/>
+      {!hide ?"se o hide estiver false" : "se o hide não estiver false" }<br/>
+      <button onClick={()=>setHide(!hide)}> Inverter hide</button><br/>
       <Ex1/>
       <EX2/>
       <Props numero="14" nome="julio" idade='21' />
