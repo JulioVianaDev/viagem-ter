@@ -33,7 +33,7 @@ function App(){
       <button onClick={MudarValor}> Clique aqui para mudar o valor</button>
       <br></br>
       <Botao
-        cor='red'
+        cor='blue'
         tarefa={()=>console.log("cliquei")}
         texto="clique para exibir no console"
       />
