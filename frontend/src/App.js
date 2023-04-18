@@ -22,6 +22,12 @@ function App() {
       .then(res=>{
         console.log(res.data);
         setViagens([...viagens,res.data])
+        setTravel({
+          nome: '',
+          data: '',
+          desc: '',
+          price: 0
+        })
       })
   }
 
