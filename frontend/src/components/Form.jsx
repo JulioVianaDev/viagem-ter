@@ -1,6 +1,9 @@
+import './Form.css';
+
 function Form({travel,EnvioFormulario,setTravel}) {
   return (
-    <form onSubmit={EnvioFormulario}>
+    <div className='divForm'>
+      <form onSubmit={EnvioFormulario}>
         <label>Nome</label>
         <input 
           id="nome"
@@ -34,9 +37,10 @@ function Form({travel,EnvioFormulario,setTravel}) {
          value={travel.price}
          placeholder='Preço'
          type='number'
-        />
+         />
         <button type='submit'>Cadastrar viagem</button>
       </form>
+    </div>
   )
 }
 
