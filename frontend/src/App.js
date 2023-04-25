@@ -43,13 +43,15 @@ function App() {
         setTravel={setTravel}
         EnvioFormulario={EnvioFormulario}
       />
-      {
-        viagens.map(v=>
-         <Card
-          nome={v.nome}
-         />
-        )
-      }
+      <div className='cards'>
+        {
+          viagens.map(v=>
+            <Card
+              nome={v.nome}
+            />
+          )
+        }
+      </div>
     </div>
   )
 }

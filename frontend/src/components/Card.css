@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Sono:wght@300&display=swap');
+.card{
+  width: 256px;
+  min-height: 340px;
+  background-color: #3F3D40;
+  color:#D9BC66;
+  border: 1px solid #A68A56;
+  font-family: 'Castoro Titling', cursive;
+  padding:10px;
+  margin:10px;
+  border-radius:8px;
+}
+.card h1{
+  color:#BF9460;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.card:hover{
+  border: 1px solid #D9BC66; 
+}
