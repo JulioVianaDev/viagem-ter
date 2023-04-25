@@ -29,3 +29,7 @@
   cursor: pointer;
   box-shadow: blueviolet -2px 0px 10px 5px;
 }
+.divForm form textarea{
+  min-width: 100%;
+  max-width: 100%;
+}

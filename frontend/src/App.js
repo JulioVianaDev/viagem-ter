@@ -2,7 +2,6 @@ import axios from 'axios';
 import {useState,useEffect} from 'react';
 import Form from './components/Form';
 import Card from './components/Card';
-
 function App() {
   const [viagens,setViagens] = useState([]);
   const [travel,setTravel] = useState({
@@ -38,6 +37,7 @@ function App() {
   }
   return (
     <div>
+
       <Form
         travel={travel}
         setTravel={setTravel}

@@ -31,12 +31,12 @@ function Form({travel,EnvioFormulario,setTravel}) {
         />
         <label>Price:</label>
         <input
-         id="price"
-         required
-         onChange={(e)=>setTravel({...travel,price: e.target.value})}
-         value={travel.price}
-         placeholder='Preço'
-         type='number'
+          id="price"
+          required
+          onChange={(e)=>setTravel({...travel,price: e.target.value})}
+          value={travel.price}
+          placeholder='Preço'
+          type='number'
          />
         <button type='submit'>Cadastrar viagem</button>
       </form>
