@@ -41,3 +41,10 @@
 #trashDelete:hover{
   color:red;
 }
+.conteudoCard{
+  text-align: center;
+  font-size: 1.2rem;
+}
+.conteudoCard .price{
+  font-size: 1.5rem;
+}

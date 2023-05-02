@@ -8,14 +8,18 @@ function Card(props) {
   return (
     <div className="card">
       <h1>{props.nome}</h1>
-      <div>
+      <div className="conteudoCard">
         <p>{desc}</p>
         <p>{dataFormatada}</p>
-        <p>R$ {price}</p>
+        <p className="price">R$ {price}</p>
       </div>
       <div className="lixeixa" >
-        <div className="btns" onClick={()=>props.deletarViagem(id)}>
-          <div id="trashDelete"className="icons">
+        <div className="btns" >
+          <div 
+            onClick={()=>props.deletarViagem(id)} 
+            id="trashDelete"
+            className="icons"
+          >
             <BsFillTrash2Fill size={32}/>
           </div>
           <div className="icons">
