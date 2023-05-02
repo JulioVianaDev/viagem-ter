@@ -26,7 +26,7 @@ function App() {
           nome: '',
           data: '',
           desc: '',
-          price: 0
+          price: ''
         })
       })
   }
@@ -54,6 +54,7 @@ function App() {
         {
           viagens.map(v=>
             <Card
+              key={v.id}
               deletarViagem = {deleteTravel}
               nome={v.nome}
               id={v.id}

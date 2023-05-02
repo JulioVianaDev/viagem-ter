@@ -10,7 +10,7 @@ function Card(props) {
     setIsDelete(true);
     setTimeout(()=>{
       props.deletarViagem(id)
-    },1000)
+    },700)
   }
   return (
     <div className={isDelete? 'card disappear': 'card'}>
