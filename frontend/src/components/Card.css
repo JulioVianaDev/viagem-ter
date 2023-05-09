@@ -14,19 +14,17 @@
   justify-content: space-between;
   position: relative;
 }
+.card:hover{
+  border: 1px solid #D9BC66; 
+}
 .fundo{
   background-color: goldenrod;
 }
-.lixeira:hover{
-  color:red;
-}
+
 .card h1{
   color:#BF9460;
   font-size: 1.2rem;
   text-align: center;
-}
-.card:hover{
-  border: 1px solid #D9BC66; 
 }
 
 .disappear{
