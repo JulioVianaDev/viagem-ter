@@ -6,6 +6,7 @@ function Card(props) {
   const {id,data,desc,price} = props
   const dataFormatada = FormatarData(data);
   const [isDelete,setIsDelete] = useState(false)
+  
   const deleteMode=()=>{
     setIsDelete(true);
     setTimeout(()=>{
