@@ -42,10 +42,15 @@ function App() {
     e.preventDefault()
     cadastrarViagem(travel)
   }
+  const [viagemAtual,setViagemAtual] = useState({})
+  function acharViagem(id){
+    setViagemAtual(viagens.filter(v =>v.id === id)[0])
+  }
   return (
     <div>
       <Form
         id={editID}
+        viagemAtual={viagemAtual}
         travel={travel}
         setTravel={setTravel}
         EnvioFormulario={EnvioFormulario}
@@ -55,6 +60,7 @@ function App() {
           viagens.map(v=>
             <Card
               key={v.id}
+              acharViagem={acharViagem}
               deletarViagem = {deleteTravel}
               nome={v.nome}
               id={v.id}

@@ -17,6 +17,7 @@ function Card(props) {
   }
   const setEditing = ()=>{
     props.setEditID(id)
+    props.acharViagem(id)
   }
   return (
     <div className={isDelete? 'card disappear': 'card'}>
