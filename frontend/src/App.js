@@ -8,7 +8,7 @@ function App() {
     nome: '',
     data: '',
     desc: '',
-    price: 0
+    price: ''
   })
 
   useEffect(()=>{
