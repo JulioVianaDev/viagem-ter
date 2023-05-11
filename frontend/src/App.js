@@ -10,7 +10,7 @@ function App() {
     desc: '',
     price: ''
   })
-  const [editID,setEditID] = useState(null);
+  const [editID,setEditID] = useState(-1);
   useEffect(()=>{
     axios.get("http://localhost:3001/api/v1/travels")
       .then(res=>setViagens(res.data))
@@ -42,9 +42,8 @@ function App() {
     e.preventDefault()
     cadastrarViagem(travel)
   }
-  const [viagemAtual,setViagemAtual] = useState({})
   function acharViagem(id){
-    setViagemAtual(viagens.filter(v =>v.id === id)[0])
+    let viagemAtual = viagens.filter(v =>v.id === id)[0]
     setTravel({
       nome: viagemAtual.nome,
       data: viagemAtual.travel,
@@ -56,7 +55,6 @@ function App() {
     <div>
       <Form
         id={editID}
-        viagemAtual={viagemAtual}
         travel={travel}
         setTravel={setTravel}
         EnvioFormulario={EnvioFormulario}
@@ -66,7 +64,7 @@ function App() {
           viagens.map(v=>
             <Card
               key={v.id}
-              acharViagem={acharViagem}
+              setTravel={setTravel}
               deletarViagem = {deleteTravel}
               nome={v.nome}
               id={v.id}

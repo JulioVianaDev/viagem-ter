@@ -1,6 +1,6 @@
 import './Form.css';
 
-function Form({viagemAtual,travel,EnvioFormulario,setTravel,id}) {
+function Form({travel,EnvioFormulario,setTravel,id}) {
   
   if(id){
     
