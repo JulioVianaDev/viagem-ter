@@ -18,7 +18,7 @@ function Card(props) {
   const setEditing = ()=>{
     props.setTravel({
       nome: props.nome,
-      data: data,
+      data: data.slice(0, 16),
       desc: desc,
       price: price
     })
