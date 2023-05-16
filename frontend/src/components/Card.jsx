@@ -22,7 +22,9 @@ function Card(props) {
       desc: desc,
       price: price
     })
+    props.setEditID(id)
   }
+  
   return (
     <div className={isDelete? 'card disappear': 'card'}>
         <h1>{props.nome}</h1>
