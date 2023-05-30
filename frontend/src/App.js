@@ -22,13 +22,13 @@ function App() {
     },3500)
   }
   useEffect(()=>{
-    axios.get("http://localhost:3001/api/v1/travels")
+    axios.get("http://localhost:3001/api/v2/travels")
       .then(res=>setViagens(res.data))
       .catch(erro=> console.log("deu erro no getAPi: ",erro))
   },[])
 
   const cadastrarViagem=(travel)=>{
-    axios.post("http://localhost:3001/api/v1/travels",{travel})
+    axios.post("http://localhost:3001/api/v2/travels",{travel})
       .then(res=>{
         console.log(res.data);
         setViagens([...viagens,res.data])
@@ -54,7 +54,7 @@ function App() {
       })
   }
   const deleteTravel = (id)=>{
-    axios.delete(`http://localhost:3001/api/v1/travels/${id}`)
+    axios.delete(`http://localhost:3001/api/v2/travels/${id}`)
       .then(res=>{
         console.log(res.data)
         setViagens(viagens.filter(v => v.id !== id))
@@ -74,7 +74,7 @@ function App() {
       })
   }
   const editTravel = (id,travel)=>{
-    axios.put(`http://localhost:3001/api/v1/travels/${id}`,{travel}) 
+    axios.put(`http://localhost:3001/api/v2/travels/${id}`,{travel}) 
       .then(res=>{
         let newListaDeViagens = viagens.map( v=>{
           if(v.id === id){
