@@ -1,5 +1,5 @@
 import './Form.css';
-import { useState,useEffect } from 'react';
+import { useEffect } from 'react';
 function Form({travel,EnvioFormulario,setTravel,id}) {
 
   useEffect(()=>{

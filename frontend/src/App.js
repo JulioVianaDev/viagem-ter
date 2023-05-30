@@ -9,7 +9,8 @@ function App() {
     nome: '',
     data: '',
     desc: '',
-    price: ''
+    price: '',
+    image: null
   })
   const [showPopup,setShowPopup] = useState(false);
   const [editID,setEditID] = useState(-1);
@@ -27,8 +28,12 @@ function App() {
       .catch(erro=> console.log("deu erro no getAPi: ",erro))
   },[])
 
-  const cadastrarViagem=(travel)=>{
-    axios.post("http://localhost:3001/api/v2/travels",{travel})
+  const cadastrarViagem=(formData)=>{
+    axios.post("http://localhost:3001/api/v2/travels",formData,{
+      headers: {
+        'Content-Type': 'multipart/form-data',
+      },
+    })
       .then(res=>{
         console.log(res.data);
         setViagens([...viagens,res.data])
@@ -36,7 +41,8 @@ function App() {
           nome: '',
           data: '',
           desc: '',
-          price: ''
+          price: '',
+          image: null
         })
         setPopupContent({
           message: 'Card Cadastrado com Sucesso',
@@ -111,7 +117,13 @@ function App() {
       })
       return
     }
-    cadastrarViagem(travel)
+    const formData = new FormData();
+    formData.append('travel[image]',travel.image);
+    formData.append('travel[nome]',travel.nome);
+    formData.append('travel[desc]',travel.desc);
+    formData.append('travel[price]',travel.price);
+    formData.append('travel[data]',travel.data);
+    cadastrarViagem(formData)
   }
 
   return (
