@@ -32,6 +32,7 @@ function Card(props) {
           <p>{desc}</p>
           <p>{dataFormatada}</p>
           <p className="price">R$ {price}</p>
+          <img src={props.image_url} alt={props.nome}/>
         </div>
         <div className="lixeixa" >
           <div className="btns" >
