@@ -5,7 +5,7 @@ class Api::V2::TravelsController < ApplicationController
     serialized_travels = @travels.map do |travel|
       TravelSerializer.new(travel).serializable_hash[:data][:attributes]
     end
-    render json: @travels 
+    render json:  serialized_travels
   end
 
   def show
